@@ -46,7 +46,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Telegram Bot Configuration
 const TELEGRAM_BOT_TOKEN = '8783124742:AAHNyS6uVbX4rbt0oOdhZjqxlqdK4omq8DE';
-const TELEGRAM_CHAT_ID = '752992499'; // Дима
+const TELEGRAM_CHAT_ID = '-1003725375694'; // Legal loophole group
+const TELEGRAM_THREAD_ID = 18; // Колл-центр topic
 
 // Form submission
 const contactForm = document.querySelector('.contact-form');
@@ -89,6 +90,7 @@ ${message}
                 },
                 body: JSON.stringify({
                     chat_id: TELEGRAM_CHAT_ID,
+                    message_thread_id: TELEGRAM_THREAD_ID,
                     text: telegramMessage,
                     parse_mode: 'HTML'
                 })
