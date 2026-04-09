@@ -3,193 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Юридические услуги - Профессиональная помощь</title>
+    <title>ЮрПомощь - Профессиональные юридические услуги</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav class="container">
-            <div class="logo">
-                <i class="fas fa-balance-scale"></i>
-                <span>ЮрПомощь</span>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#home">Главная</a></li>
-                <li><a href="#services">Услуги</a></li>
-                <li><a href="#about">О нас</a></li>
-                <li><a href="#contact">Контакты</a></li>
-            </ul>
-            <div class="burger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="#" class="logo">
+                    <i class="fas fa-balance-scale"></i>
+                    <span>ЮрПомощь</span>
+                </a>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#hero">Главная</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+                <button class="burger" id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
     </header>
 
-    <section id="home" class="hero">
-        <div class="hero-bg-pattern"></div>
-        <div class="container hero-content">
-            <div class="hero-badge">
-                <i class="fas fa-shield-alt"></i>
-                <span>Защита ваших прав</span>
-            </div>
-            <h1 class="hero-title">Профессиональная<br>юридическая помощь</h1>
-            <p class="hero-subtitle">Защитим ваши права и интересы на всех уровнях.<br>Более 15 лет успешной практики.</p>
-            <div class="hero-buttons">
-                <a href="#contact" class="btn btn-primary">
-                    <span>Получить консультацию</span>
-                    <i class="fas fa-arrow-right"></i>
-                </a>
-                <a href="#services" class="btn btn-secondary">
-                    <span>Наши услуги</span>
-                </a>
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Профессиональная юридическая помощь</h1>
+                <p class="hero-text">Защитим ваши права и интересы на всех уровнях. Более 15 лет успешной практики.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Получить консультацию</a>
+                    <a href="#services" class="btn btn-outline">Наши услуги</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="services" class="services">
+    <!-- Services -->
+    <section class="services" id="services">
         <div class="container">
             <div class="section-header">
-                <span class="section-badge">Что мы предлагаем</span>
                 <h2 class="section-title">Наши услуги</h2>
                 <p class="section-subtitle">Комплексная юридическая поддержка для физических и юридических лиц</p>
             </div>
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-number">01</div>
                     <div class="service-icon">
                         <i class="fas fa-gavel"></i>
                     </div>
-                    <h3>Судебное представительство</h3>
-                    <p>Защита ваших интересов в судах всех инстанций. Опытные адвокаты с высоким процентом выигранных дел.</p>
-                    <a href="#contact" class="service-link">
-                        Подробнее <i class="fas fa-arrow-right"></i>
-                    </a>
+                    <h3 class="service-title">Судебное представительство</h3>
+                    <p class="service-text">Защита ваших интересов в судах всех инстанций</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-number">02</div>
                     <div class="service-icon">
                         <i class="fas fa-file-contract"></i>
                     </div>
-                    <h3>Составление договоров</h3>
-                    <p>Профессиональная подготовка юридических документов любой сложности с учетом всех нюансов.</p>
-                    <a href="#contact" class="service-link">
-                        Подробнее <i class="fas fa-arrow-right"></i>
-                    </a>
+                    <h3 class="service-title">Составление договоров</h3>
+                    <p class="service-text">Профессиональная подготовка юридических документов</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-number">03</div>
                     <div class="service-icon">
                         <i class="fas fa-users"></i>
                     </div>
-                    <h3>Семейное право</h3>
-                    <p>Решение семейных споров, вопросов наследства и раздела имущества в досудебном и судебном порядке.</p>
-                    <a href="#contact" class="service-link">
-                        Подробнее <i class="fas fa-arrow-right"></i>
-                    </a>
+                    <h3 class="service-title">Семейное право</h3>
+                    <p class="service-text">Решение семейных споров и вопросов наследства</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-number">04</div>
                     <div class="service-icon">
                         <i class="fas fa-briefcase"></i>
                     </div>
-                    <h3>Трудовые споры</h3>
-                    <p>Защита прав работников и работодателей. Восстановление на работе, взыскание задолженности.</p>
-                    <a href="#contact" class="service-link">
-                        Подробнее <i class="fas fa-arrow-right"></i>
-                    </a>
+                    <h3 class="service-title">Трудовые споры</h3>
+                    <p class="service-text">Защита прав работников и работодателей</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-number">05</div>
                     <div class="service-icon">
                         <i class="fas fa-shield-alt"></i>
                     </div>
-                    <h3>Защита прав потребителей</h3>
-                    <p>Помощь в спорах с продавцами и производителями. Возврат товара, компенсация морального вреда.</p>
-                    <a href="#contact" class="service-link">
-                        Подробнее <i class="fas fa-arrow-right"></i>
-                    </a>
+                    <h3 class="service-title">Защита прав потребителей</h3>
+                    <p class="service-text">Помощь в спорах с продавцами и производителями</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-number">06</div>
                     <div class="service-icon">
                         <i class="fas fa-building"></i>
                     </div>
-                    <h3>Регистрация бизнеса</h3>
-                    <p>Полное юридическое сопровождение открытия компании. Регистрация ООО, ИП, лицензирование.</p>
-                    <a href="#contact" class="service-link">
-                        Подробнее <i class="fas fa-arrow-right"></i>
-                    </a>
+                    <h3 class="service-title">Регистрация бизнеса</h3>
+                    <p class="service-text">Полное юридическое сопровождение открытия компании</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="about">
+    <!-- About -->
+    <section class="about" id="about">
         <div class="container">
-            <div class="about-wrapper">
-                <div class="about-image">
-                    <div class="about-image-placeholder">
-                        <i class="fas fa-balance-scale"></i>
-                    </div>
-                    <div class="about-badge">
-                        <div class="badge-number">15+</div>
-                        <div class="badge-text">лет опыта</div>
-                    </div>
-                </div>
-                <div class="about-content">
-                    <span class="section-badge">О компании</span>
-                    <h2 class="section-title">Мы защищаем ваши права</h2>
-                    <p>Мы — команда опытных юристов с многолетней практикой в различных отраслях права. Наша миссия — обеспечить каждому клиенту профессиональную защиту его прав и законных интересов.</p>
-                    <p>Мы гордимся тем, что помогли сотням клиентов решить их юридические проблемы. Наш подход основан на глубоком знании законодательства, внимательном отношении к каждому делу и стремлении к достижению наилучшего результата.</p>
-                    <div class="about-features">
-                        <div class="feature-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Индивидуальный подход</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Конфиденциальность</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Прозрачное ценообразование</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Работа на результат</span>
-                        </div>
-                    </div>
-                </div>
+            <div class="section-header">
+                <h2 class="section-title">О нас</h2>
+                <p class="section-subtitle">Команда профессионалов с многолетним опытом</p>
             </div>
-            <div class="about-stats">
-                <div class="stat-item">
-                    <div class="stat-icon">
-                        <i class="fas fa-trophy"></i>
-                    </div>
+            <div class="about-content">
+                <p>Мы — команда опытных юристов с многолетней практикой в различных отраслях права. Наша миссия — обеспечить каждому клиенту профессиональную защиту его прав и законных интересов.</p>
+                <p>Мы гордимся тем, что помогли сотням клиентов решить их юридические проблемы. Наш подход основан на глубоком знании законодательства, внимательном отношении к каждому делу и стремлении к достижению наилучшего результата.</p>
+            </div>
+            <div class="stats">
+                <div class="stat-card">
                     <div class="stat-number">500+</div>
                     <div class="stat-label">Выигранных дел</div>
                 </div>
-                <div class="stat-item">
-                    <div class="stat-icon">
-                        <i class="fas fa-clock"></i>
-                    </div>
+                <div class="stat-card">
                     <div class="stat-number">15+</div>
                     <div class="stat-label">Лет опыта</div>
                 </div>
-                <div class="stat-item">
-                    <div class="stat-icon">
-                        <i class="fas fa-smile"></i>
-                    </div>
+                <div class="stat-card">
                     <div class="stat-number">98%</div>
                     <div class="stat-label">Довольных клиентов</div>
                 </div>
-                <div class="stat-item">
-                    <div class="stat-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
+                <div class="stat-card">
                     <div class="stat-number">1000+</div>
                     <div class="stat-label">Клиентов</div>
                 </div>
@@ -197,85 +131,70 @@
         </div>
     </section>
 
-    <section id="contact" class="contact">
+    <!-- Contact -->
+    <section class="contact" id="contact">
         <div class="container">
             <div class="section-header">
-                <span class="section-badge">Связаться с нами</span>
-                <h2 class="section-title">Получите бесплатную консультацию</h2>
-                <p class="section-subtitle">Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
+                <h2 class="section-title">Свяжитесь с нами</h2>
+                <p class="section-subtitle">Получите бесплатную консультацию</p>
             </div>
             <div class="contact-wrapper">
                 <div class="contact-info">
                     <h3>Контактная информация</h3>
-                    <p>Свяжитесь с нами любым удобным способом</p>
-                    <div class="info-items">
-                        <div class="info-item">
-                            <div class="info-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div class="info-content">
-                                <div class="info-label">Телефон</div>
-                                <div class="info-value">+7 (900) 123-45-67</div>
-                            </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <div class="contact-label">Телефон</div>
+                            <div class="contact-value">+7 (900) 123-45-67</div>
                         </div>
-                        <div class="info-item">
-                            <div class="info-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="info-content">
-                                <div class="info-label">Email</div>
-                                <div class="info-value">info@lawyer.ru</div>
-                            </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <div class="contact-label">Email</div>
+                            <div class="contact-value">info@lawyer.ru</div>
                         </div>
-                        <div class="info-item">
-                            <div class="info-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="info-content">
-                                <div class="info-label">Адрес</div>
-                                <div class="info-value">г. Москва, ул. Примерная, д. 1</div>
-                            </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <div class="contact-label">Адрес</div>
+                            <div class="contact-value">г. Москва, ул. Примерная, д. 1</div>
                         </div>
-                        <div class="info-item">
-                            <div class="info-icon">
-                                <i class="fas fa-clock"></i>
-                            </div>
-                            <div class="info-content">
-                                <div class="info-label">Режим работы</div>
-                                <div class="info-value">Пн-Пт: 9:00 - 18:00</div>
-                            </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <div class="contact-label">Режим работы</div>
+                            <div class="contact-value">Пн-Пт: 9:00 - 18:00</div>
                         </div>
                     </div>
                 </div>
                 <form class="contact-form">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label>Ваше имя</label>
-                            <input type="text" placeholder="Иван Иванов" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Телефон</label>
-                            <input type="tel" placeholder="+7 (___) ___-__-__" required>
-                        </div>
+                    <div class="form-group">
+                        <label>Ваше имя</label>
+                        <input type="text" placeholder="Иван Иванов" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Телефон</label>
+                        <input type="tel" placeholder="+7 (___) ___-__-__" required>
                     </div>
                     <div class="form-group">
                         <label>Email</label>
                         <input type="email" placeholder="example@mail.ru">
                     </div>
                     <div class="form-group">
-                        <label>Опишите вашу ситуацию</label>
-                        <textarea placeholder="Расскажите о вашей проблеме..." rows="5" required></textarea>
+                        <label>Сообщение</label>
+                        <textarea rows="5" placeholder="Опишите вашу ситуацию..." required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">
-                        <span>Отправить заявку</span>
-                        <i class="fas fa-paper-plane"></i>
-                    </button>
+                    <button type="submit" class="btn btn-primary btn-full">Отправить заявку</button>
                 </form>
             </div>
         </div>
     </section>
 
-    <footer>
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
